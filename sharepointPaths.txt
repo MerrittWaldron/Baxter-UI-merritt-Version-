@@ -1,0 +1,4 @@
+Shared Documents/Brewery and Cellar/Brewing Logs/Old Brewing Logs/
+Shared Documents/Brewery and Cellar/Tank Logs/Old Tank Logs/
+Shared Documents/Brewery and Cellar/Filter Logs/Old Filter Logs/
+Shared Documents/Brewery and Cellar/Brewing Logs/Hops Tracking/

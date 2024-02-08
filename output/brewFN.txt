@@ -1,0 +1,227 @@
+./input/Brew/Week of 1.1.23.xlsx
+./input/Brew/Week of 1.11.21 PUB.xlsx
+./input/Brew/Week of 1.11.21.xlsx
+./input/Brew/Week of 1.13.20 PUB.xlsx
+./input/Brew/Week of 1.13.20.xlsx
+./input/Brew/Week of 1.15.23.xlsx
+./input/Brew/Week of 1.16.22.xlsx
+./input/Brew/Week of 1.18.21 PUB.xlsx
+./input/Brew/Week of 1.18.21.xlsx
+./input/Brew/Week of 1.2.22.xlsx
+./input/Brew/Week of 1.20.20 PUB.xlsx
+./input/Brew/Week of 1.20.20.xlsx
+./input/Brew/Week of 1.23.22.xlsx
+./input/Brew/Week of 1.23.23.xlsx
+./input/Brew/Week of 1.25.21.xlsx
+./input/Brew/Week of 1.27.20 PUB.xlsx
+./input/Brew/Week of 1.27.20.xlsx
+./input/Brew/Week of 1.29.23.xlsx
+./input/Brew/Week of 1.30.22.xlsx
+./input/Brew/Week of 1.4.21 PUB.xlsx
+./input/Brew/Week of 1.4.21.xlsx
+./input/Brew/Week of 1.5.21.xlsx
+./input/Brew/Week of 1.6.20 PUB.xlsx
+./input/Brew/Week of 1.6.20.xlsx
+./input/Brew/Week of 1.9.22 PUB.xlsx
+./input/Brew/Week of 1.9.22.xlsx
+./input/Brew/Week of 10.10.21.xlsx
+./input/Brew/Week of 10.12.20 PUB.xlsx
+./input/Brew/Week of 10.12.20.xlsx
+./input/Brew/Week of 10.16.22.xlsx
+./input/Brew/Week of 10.17.21.xlsx
+./input/Brew/Week of 10.19.20 PUB.xlsx
+./input/Brew/Week of 10.19.20.xlsx
+./input/Brew/Week of 10.2.22.xlsx
+./input/Brew/Week of 10.23.22.xlsx
+./input/Brew/Week of 10.25.21 Pub.xlsx
+./input/Brew/Week of 10.25.21.xlsx
+./input/Brew/Week of 10.26.20 PUB.xlsx
+./input/Brew/Week of 10.26.20.xlsx
+./input/Brew/Week of 10.3.21-PUB.xlsx
+./input/Brew/Week of 10.3.21.xlsx
+./input/Brew/Week of 10.30.22.xlsx
+./input/Brew/Week of 10.5.20 PUB.xlsx
+./input/Brew/Week of 10.5.20.xlsx
+./input/Brew/Week of 10.9.22.xlsx
+./input/Brew/Week of 11.13.22.xlsx
+./input/Brew/Week of 11.14.21 PUB.xlsx
+./input/Brew/Week of 11.14.21.xlsx
+./input/Brew/Week of 11.16.20 PUB.xlsx
+./input/Brew/Week of 11.16.20.xlsx
+./input/Brew/Week of 11.2.20 PUB.xlsx
+./input/Brew/Week of 11.2.20.xlsx
+./input/Brew/Week of 11.20.22.xlsx
+./input/Brew/Week of 11.21.21.xlsx
+./input/Brew/Week of 11.27.22.xlsx
+./input/Brew/Week of 11.28.21 PUB.xlsx
+./input/Brew/Week of 11.28.21.xlsx
+./input/Brew/Week of 11.3.20.xlsx
+./input/Brew/Week of 11.6.22.xlsx
+./input/Brew/Week of 11.7.21 PUB.xlsx
+./input/Brew/Week of 11.7.21.xlsx
+./input/Brew/Week of 11.9.20 PUB.xlsx
+./input/Brew/Week of 11.9.20.xlsx
+./input/Brew/Week of 12.11.22.xlsx
+./input/Brew/Week of 12.12.21 PUB.xlsx
+./input/Brew/Week of 12.12.21.xlsx
+./input/Brew/Week of 12.14.20.xlsx
+./input/Brew/Week of 12.19.21.xlsx
+./input/Brew/Week of 12.21.20.xlsx
+./input/Brew/Week of 12.25.22.xlsx
+./input/Brew/Week of 12.28.20 PUB.xlsx
+./input/Brew/Week of 12.28.20.xlsx
+./input/Brew/Week of 12.30.19.xlsx
+./input/Brew/Week of 12.4.22.xlsx
+./input/Brew/Week of 12.5.21.xlsx
+./input/Brew/Week of 12.7.20.xlsx
+./input/Brew/Week of 2.1.21.xlsx
+./input/Brew/Week of 2.10.20 PUB.xlsx
+./input/Brew/Week of 2.10.20.xlsx
+./input/Brew/Week of 2.12.23.xlsx
+./input/Brew/Week of 2.13.22.xlsx
+./input/Brew/Week of 2.13.22PUB.xlsx
+./input/Brew/Week of 2.14.21.xlsx
+./input/Brew/Week of 2.17.20 PUB.xlsx
+./input/Brew/Week of 2.17.20.xlsx
+./input/Brew/Week of 2.19.23.xlsx
+./input/Brew/Week of 2.20.22.xlsx
+./input/Brew/Week of 2.21.21.xlsx
+./input/Brew/Week of 2.24.20 PUB.xlsx
+./input/Brew/Week of 2.24.20.xlsx
+./input/Brew/Week of 2.26.23.xlsx
+./input/Brew/Week of 2.27.22.xlsx
+./input/Brew/Week of 2.27.22PUB.xlsx
+./input/Brew/Week of 2.28.21.xlsx
+./input/Brew/Week of 2.3.20 PUB.xlsx
+./input/Brew/Week of 2.3.20.xlsx
+./input/Brew/Week of 2.5.23.xlsx
+./input/Brew/Week of 2.6.22.xlsx
+./input/Brew/Week of 2.8.21 PUB.xlsx
+./input/Brew/Week of 2.8.21.xlsx
+./input/Brew/Week of 3.10.22.xlsx
+./input/Brew/Week of 3.12.23.xlsx
+./input/Brew/Week of 3.13.22.xlsx
+./input/Brew/Week of 3.14.21.xlsx
+./input/Brew/Week of 3.16.20 PUB.xlsx
+./input/Brew/Week of 3.16.20.xlsx
+./input/Brew/Week of 3.19.23.xlsx
+./input/Brew/Week of 3.2.20 PUB.xlsx
+./input/Brew/Week of 3.2.20.xlsx
+./input/Brew/Week of 3.20.22.xlsx
+./input/Brew/Week of 3.21.21.xlsx
+./input/Brew/Week of 3.21.22.xlsx
+./input/Brew/Week of 3.23.20.xlsx
+./input/Brew/Week of 3.27.22.xlsx
+./input/Brew/Week of 3.28.21.xlsx
+./input/Brew/Week of 3.30.20.xlsx
+./input/Brew/Week of 3.5.23.xlsx
+./input/Brew/Week of 3.7.21.xlsx
+./input/Brew/Week of 3.9.20 PUB.xlsx
+./input/Brew/Week of 3.9.20.xlsx
+./input/Brew/Week of 4.10.22.xlsx
+./input/Brew/Week of 4.10.22PUB.xlsx
+./input/Brew/Week of 4.11.21.xlsx
+./input/Brew/Week of 4.13.20.xlsx
+./input/Brew/Week of 4.17.22.xlsx
+./input/Brew/Week of 4.17.22PUB.xlsx
+./input/Brew/Week of 4.18.21.xlsx
+./input/Brew/Week of 4.2.23.xlsx
+./input/Brew/Week of 4.20.20.xlsx
+./input/Brew/Week of 4.24.22.xlsx
+./input/Brew/Week of 4.24.22PUB.xlsx
+./input/Brew/Week of 4.25.21.xlsx
+./input/Brew/Week of 4.27.20 PUB.xlsx
+./input/Brew/Week of 4.27.20.xlsx
+./input/Brew/Week of 4.3.22.xlsx
+./input/Brew/Week of 4.3.22PUB.xlsx
+./input/Brew/Week of 4.4.21.xlsx
+./input/Brew/Week of 4.6.20.xlsx
+./input/Brew/Week of 4.9.23.xlsx
+./input/Brew/Week of 5.1.22.xlsx
+./input/Brew/Week of 5.11.20.xlsx
+./input/Brew/Week of 5.15.22.xlsx
+./input/Brew/Week of 5.15.22PUB.xlsx
+./input/Brew/Week of 5.16.21 PUB.xlsx
+./input/Brew/Week of 5.16.21.xlsx
+./input/Brew/Week of 5.18.20 PUB.xlsx
+./input/Brew/Week of 5.18.20.xlsx
+./input/Brew/Week of 5.2.21 PUB.xlsx
+./input/Brew/Week of 5.22.22 PUB.xlsx
+./input/Brew/Week of 5.22.22.xlsx
+./input/Brew/Week of 5.23.21 PUB.xlsx
+./input/Brew/Week of 5.23.21.xlsx
+./input/Brew/Week of 5.25.20.xlsx
+./input/Brew/Week of 5.30.21 PUB.xlsx
+./input/Brew/Week of 5.30.21.xlsx
+./input/Brew/Week of 5.4.20 PUB.xlsx
+./input/Brew/Week of 5.4.20.xlsx
+./input/Brew/Week of 5.8.22.xlsx
+./input/Brew/Week of 5.8.22PUB.xlsx
+./input/Brew/Week of 5.9.21.xlsx
+./input/Brew/Week of 6.1.20.xlsx
+./input/Brew/Week of 6.12.22.xlsx
+./input/Brew/Week of 6.13.21.xlsx
+./input/Brew/Week of 6.13.21PUB.xlsx
+./input/Brew/Week of 6.15.20.xlsx
+./input/Brew/Week of 6.19.22.xlsx
+./input/Brew/Week of 6.20.21.xlsx
+./input/Brew/Week of 6.22.20.xlsx
+./input/Brew/Week of 6.26.22.xlsx
+./input/Brew/Week of 6.27.21.xlsx
+./input/Brew/Week of 6.29.20 PUB.xlsx
+./input/Brew/Week of 6.29.20.xlsx
+./input/Brew/Week of 6.5.22.xlsx
+./input/Brew/Week of 6.6.21 PUB.xlsx
+./input/Brew/Week of 6.6.21.xlsx
+./input/Brew/Week of 6.8.20.xlsx
+./input/Brew/Week of 7.10.22.xlsx
+./input/Brew/Week of 7.11.21 PUB.xlsx
+./input/Brew/Week of 7.11.21.xlsx
+./input/Brew/Week of 7.13.20 PUB.xlsx
+./input/Brew/Week of 7.13.20.xlsx
+./input/Brew/Week of 7.17.22.xlsx
+./input/Brew/Week of 7.20.20 PUB.xlsx
+./input/Brew/Week of 7.20.20.xlsx
+./input/Brew/Week of 7.24.22.xlsx
+./input/Brew/Week of 7.25.21.xlsx
+./input/Brew/Week of 7.27.20 PUB.xlsx
+./input/Brew/Week of 7.27.20.xlsx
+./input/Brew/Week of 7.3.22.xlsx
+./input/Brew/Week of 7.31.22.xlsx
+./input/Brew/Week of 7.4.21.xlsx
+./input/Brew/Week of 7.4.21PUB.xlsx
+./input/Brew/Week of 7.6.20 PUB.xlsx
+./input/Brew/Week of 7.6.20.xlsx
+./input/Brew/Week of 8.1.21.xlsx
+./input/Brew/Week of 8.10.20 PUB.xlsx
+./input/Brew/Week of 8.10.20.xlsx
+./input/Brew/Week of 8.14.22.xlsx
+./input/Brew/Week of 8.15.21.xlsx
+./input/Brew/Week of 8.17.20 PUB.xlsx
+./input/Brew/Week of 8.21.22.xlsx
+./input/Brew/Week of 8.22.21.xlsx
+./input/Brew/Week of 8.24.20.xlsx
+./input/Brew/Week of 8.28.22.xlsx
+./input/Brew/Week of 8.29.21.xlsx
+./input/Brew/Week of 8.3.20 PUB.xlsx
+./input/Brew/Week of 8.3.20.xlsx
+./input/Brew/Week of 8.31.20 PUB.xlsx
+./input/Brew/Week of 8.31.20.xlsx
+./input/Brew/Week of 8.4.22.xlsx
+./input/Brew/Week of 8.8.21.xlsx
+./input/Brew/Week of 9.11.21.xlsx
+./input/Brew/Week of 9.11.22.xlsx
+./input/Brew/Week of 9.14.20 PUB.xlsx
+./input/Brew/Week of 9.14.20.xlsx
+./input/Brew/Week of 9.18.22.xlsx
+./input/Brew/Week of 9.19.21 Pub.xlsx
+./input/Brew/Week of 9.19.21.xlsx
+./input/Brew/Week of 9.21.20 PUB.xlsx
+./input/Brew/Week of 9.21.20.xlsx
+./input/Brew/Week of 9.25.22.xlsx
+./input/Brew/Week of 9.26.21 PUB.xlsx
+./input/Brew/Week of 9.26.21.xlsx
+./input/Brew/Week of 9.28.20.xlsx
+./input/Brew/Week of 9.4.22.xlsx
+./input/Brew/Week of 9.5.21 Pub.xlsx
+./input/Brew/Week of 9.5.21.xlsx

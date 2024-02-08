@@ -1,0 +1,48 @@
+Adjuncts,
+Item,Required Quantity,Required UOM,Inventory Quantity,Inventory UOM
+Lactose (GLM-LACT55),55.00,Pound(s),55.00,Pound(s)
+Extracts,
+Item,Required Quantity,Required UOM,Inventory Quantity,Inventory UOM
+Chinook Salvo,4.00,Kilogram(s),0.00,Kilogram(s)
+Hops,
+Item,Required Quantity,Required UOM,Inventory Quantity,Inventory UOM
+Amarillo,220.50,Pound(s),660.00,Pound(s)
+Bravo,38.20,Pound(s),46.04,Pound(s)
+Cascade,1758.00,Pound(s),650.38,Pound(s)
+Centennial,1311.00,Pound(s),1174.25,Pound(s)
+Citra,421.50,Pound(s),1616.00,Pound(s)
+Contessa,16.00,Pound(s),150.06,Pound(s)
+Cryo Idaho 7,22.00,Pound(s),57.00,Pound(s)
+Cryo POP,66.00,Pound(s),78.32,Pound(s)
+Ekuanot,3.50,Pound(s),19.00,Pound(s)
+Ella (AUS),3.50,Pound(s),0.00,Pound(s)
+Galaxy (AUS),56.00,Pound(s),0.00,Pound(s)
+Hallertau Blanc (GR),38.00,Pound(s),840.95,Pound(s)
+Hallertau Mittelfruh (GR),66.40,Pound(s),30.02,Pound(s)
+Huell Melon,56.00,Pound(s),1172.00,Pound(s)
+Lemondrop,3.50,Pound(s),0.00,Pound(s)
+Mandarina Bavaria (GR),41.70,Pound(s),478.80,Pound(s)
+Mosaic,264.00,Pound(s),211.50,Pound(s)
+Simcoe,277.00,Pound(s),494.25,Pound(s)
+Strata,121.00,Pound(s),2046.00,Pound(s)
+Talus,110.00,Pound(s),7.00,Pound(s)
+Warrior,40.00,Pound(s),1930.10,Pound(s)
+Malt and Malt Products,
+Item,Required Quantity,Required UOM,Inventory Quantity,Inventory UOM
+2 Row (Bulk),89732.00,Pound(s),48404.00,Pound(s)
+Caramel Pils (Best) BZ-CRPL,3300.00,Pound(s),1017.50,Pound(s)
+Crystal 30 Great Western (GW-C30M),4400.00,Pound(s),935.00,Pound(s)
+Melanoidin  (GWMELA25),220.00,Pound(s),302.50,Pound(s)
+Munich - Super Sack (CM-MUNH-T1),6600.00,Pound(s),3080.00,Pound(s)
+Munich (CM-MUNH),1320.00,Pound(s),522.50,Pound(s)
+Oat Malt (Canada Malting) - (CM-OATM),1100.00,Pound(s),0.00,Pound(s)
+Oat Malt CM Super Sac (CM-OATM-T1),4400.00,Pound(s),0.00,Pound(s)
+Red Wheat (CM-RWHT),1320.00,Pound(s),880.00,Pound(s)
+Superior Flaked Oats (CM-FOAT),8255.00,Pound(s),0.00,Pound(s)
+Superior Flaked Wheat (CM-FWHT),4000.00,Pound(s),650.00,Pound(s)
+Superior Pilsner Malt (CM-SPIL),1760.00,Pound(s),1650.00,Pound(s)
+Superior Pilsner Malt Super Sack (CM-SPIL-T1),11000.00,Pound(s),11000.00,Pound(s)
+Vienna (Best) BZ-VIEN,275.00,Pound(s),250.00,Pound(s)
+White Wheat Malt (CM-WWHT),1127.50,Pound(s),467.50,Pound(s)
+Yellow Corn Flakes (Breiss) BM 7735,2000.00,Pound(s),800.00,Pound(s)
+
