@@ -302,6 +302,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 		if len(excel_names) == 0:
 			print('\nNo files available to process')
 			return 1
+
 		# new_filenames = []
 		txtfilename = OutputDirectoryPath + "/brewFN.txt"
 		# new_filenames = find_new_filenames_to_upload(excel_names, txtfilename)
@@ -311,6 +312,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 		# excel_names = new_filenames
 		#  read them into list
 		excels = [pd.ExcelFile(name) for name in excel_names]
+
 
 		#  print out filenames
 		print("\n")
@@ -387,7 +389,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					# this code is here to make sure we convert all sheets to a consistent format
 					# also make sure that the naming convention is the same for all files to be concatenated.
 					
-					#new code to fix column name changes
+					#new code to fix column name changes. Make sure dataframe names are all the same for merging
 					dfn.columns.values[5] = 'Blank 1'
 					dfn.columns.values[6] = 'Strike water vol (gal)'
 					dfn.columns.values[7] = 'Target strike vol (gal)'
@@ -397,9 +399,8 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					dfn.columns.values[22] = 'Kettle Gravity Pre (Plato)'
 					dfn.columns.values[33] = 'Kettle Gravity (Plato)'
 					dfn.columns.values[35] = 'Cool pool Temperature'
+					dfn.columns.values[36] = 'Castout Temperature'
 					dfn.columns.values[38] = 'Castout vol (gal)'
-					#dfn['Kettle Temp Stop'] = dfn['Target sparge (gal)']
-					#dfn['Target sparge (gal)'] = 0
 					# 	#print("Updating to new format")
 
 					# if "HLT" in oldframefmt:
@@ -431,6 +432,8 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					# 	dfn.columns.values[35] = 'Cool pool Temperature'
 					# 	dfn.columns.values[38] = 'Castout vol (gal)'
 					# 	# print("Detected new format")
+
+
 					# drop all the columns that don't have a Strike temp entry which identifies the number of turns
 					dfn.dropna(axis=0, subset=['Strike Temp'], inplace=True)
 					# print('Pre',dfn.shape)
@@ -460,7 +463,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					keydata.append(dfdash)
 			write_FN_file(excel_names[file_cnt - 1], txtfilename)
 		print("Processed ", file_cnt, " Brew files and ", batch_cnt, " Batches")
-		#  concatenate them all the frames
+		#  concatenate all the frames
 		combined = pd.concat(frames, sort=False)
 		combined = combined.iloc[:, 0:28].copy()
 		# create the Key sheet for Excel
