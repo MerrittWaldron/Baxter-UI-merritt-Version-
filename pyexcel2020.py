@@ -386,34 +386,51 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					oldframefmt = str(dfnheaders[5])
 					# this code is here to make sure we convert all sheets to a consistent format
 					# also make sure that the naming convention is the same for all files to be concatenated.
-					if "HLT" in oldframefmt:
-						dfn.columns.values[5] = 'Estimated Strike Temp'
-						dfn.columns.values[6] = 'HLT volume (Mash)'
-						dfn.columns.values[7] = 'Strike water vol (gal)'
-						dfn['HLT volume (Mash)'] = dfn['Estimated Strike Temp']
-						dfn['Estimated Strike Temp'] = 0
-						dfn['Target strike vol (gal)'] = 0
-						dfn.columns.values[18] = 'Target sparge (gal)'
-						dfn.columns.values[19] = 'Kettle Temp Stop'
-						dfn.columns.values[22] = 'Kettle Gravity Pre (Plato)'
-						dfn.columns.values[33] = 'Kettle Gravity (Plato)'
-						dfn.columns.values[35] = 'Cool pool Temperature'
-						dfn.columns.values[38] = 'Castout vol (gal)'
-						dfn['Kettle Temp Stop'] = dfn['Target sparge (gal)']
-						dfn['Target sparge (gal)'] = 0
-						#print("Updating to new format")
-					else:
-						# make sure all column headers are correct in case of typos
-						dfn.columns.values[5] = 'Estimated Strike Temp'
-						dfn.columns.values[6] = 'Strike water vol (gal)'
-						dfn.columns.values[7] = 'Target strike vol (gal)'
-						dfn.columns.values[18] = 'Target sparge (gal)'
-						dfn.columns.values[19] = 'Kettle Temp Stop'
-						dfn.columns.values[22] = 'Kettle Gravity Pre (Plato)'
-						dfn.columns.values[33] = 'Kettle Gravity (Plato)'
-						dfn.columns.values[35] = 'Cool pool Temperature'
-						dfn.columns.values[38] = 'Castout vol (gal)'
-						# print("Detected new format")
+					
+					#new code to fix column name changes
+					dfn.columns.values[5] = 'Blank 1'
+					dfn.columns.values[6] = 'Strike water vol (gal)'
+					dfn.columns.values[7] = 'Target strike vol (gal)'
+					dfn.columns.values[17] = 'Sparge water vol (gal)'
+					dfn.columns.values[18] = 'Target sparge (gal)'
+					dfn.columns.values[19] = 'Kettle Temp Stop'
+					dfn.columns.values[22] = 'Kettle Gravity Pre (Plato)'
+					dfn.columns.values[33] = 'Kettle Gravity (Plato)'
+					dfn.columns.values[35] = 'Cool pool Temperature'
+					dfn.columns.values[38] = 'Castout vol (gal)'
+					#dfn['Kettle Temp Stop'] = dfn['Target sparge (gal)']
+					#dfn['Target sparge (gal)'] = 0
+					# 	#print("Updating to new format")
+
+					# if "HLT" in oldframefmt:
+					# 	dfn.columns.values[5] = 'Estimated Strike Temp'
+					# 	dfn.columns.values[6] = 'HLT volume (Mash)'
+					# 	dfn.columns.values[7] = 'Strike water vol (gal)'
+					# 	dfn['HLT volume (Mash)'] = dfn['Estimated Strike Temp']
+					# 	dfn['Estimated Strike Temp'] = 0
+					# 	dfn['Target strike vol (gal)'] = 0
+					# 	dfn.columns.values[18] = 'Target sparge (gal)'
+					# 	dfn.columns.values[19] = 'Kettle Temp Stop'
+					# 	dfn.columns.values[22] = 'Kettle Gravity Pre (Plato)'
+					# 	dfn.columns.values[33] = 'Kettle Gravity (Plato)'
+					# 	dfn.columns.values[35] = 'Cool pool Temperature'
+					# 	dfn.columns.values[38] = 'Castout vol (gal)'
+					# 	dfn['Kettle Temp Stop'] = dfn['Target sparge (gal)']
+					# 	dfn['Target sparge (gal)'] = 0
+					# 	#print("Updating to new format")
+					# else:
+					# 	# make sure all column headers are correct in case of typos
+					# 	dfn.columns.values[5] = 'Estimated Strike Temp'
+					# 	dfn.columns.values[6] = 'Strike water vol (gal)'
+					# 	dfn.columns.values[7] = 'Target strike vol (gal)'
+					# 	#dfn.columns.values[17] = 'Sparge water vol (gal)'
+					# 	dfn.columns.values[18] = 'Target sparge (gal)'
+					# 	dfn.columns.values[19] = 'Kettle Temp Stop'
+					# 	dfn.columns.values[22] = 'Kettle Gravity Pre (Plato)'
+					# 	dfn.columns.values[33] = 'Kettle Gravity (Plato)'
+					# 	dfn.columns.values[35] = 'Cool pool Temperature'
+					# 	dfn.columns.values[38] = 'Castout vol (gal)'
+					# 	# print("Detected new format")
 					# drop all the columns that don't have a Strike temp entry which identifies the number of turns
 					dfn.dropna(axis=0, subset=['Strike Temp'], inplace=True)
 					# print('Pre',dfn.shape)

@@ -32,7 +32,7 @@ from sharepoint import upload_new_file
 from ekoshandling import *
 
 
-VERSION = "Baxter Excel Automation V6.5.1"
+VERSION = "Baxter Excel Automation V7.0.0"
 
 InputTankLogDir = '/Tank'
 InputFilterLogDir = '/Filter'
