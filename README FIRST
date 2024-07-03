@@ -7,10 +7,10 @@ Baxter GUI environment setup procedure
 #cd to the BaxterGUI directory
 #execute these commands
 
-conda env create --file pythonenv.txt -n baxterGUI
-conda activate baxterGUI
+conda env create --name baxterGUI --file=package.yml
+conda activate BaxterGUI
 
-#execute this command
-pip install shareplum
-conda install pyinstaller
+#these command are optional if the shareplum or pyinstaller packages were not installed
+pip3 install shareplum 0.5.1
+pip3 install pyinstaller==5.6.2
 

@@ -71,7 +71,7 @@ def create_ingredients_order_excel(InputDirectoryPath, OutputDirectoryPath):
 			inventory = columnSeriesObjInventory.values[loop]
 			# if value is not an integer the row don;t subtract
 			if isinstance(required, int):
-				if (inventory - required) < 0 :
+				if (inventory - required) < 0:
 					columnSeriesObjOrder.values[loop] = inventory - required
 			loop = loop + 1
 		print(mydf)
@@ -95,7 +95,7 @@ def create_ingredients_order_excel(InputDirectoryPath, OutputDirectoryPath):
 		print("Entry in Ekos file is not valid")
 		print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 		# print("Exception", e)
-		return(0)
+		return (0)
 
 
 ''' this method processes Ekos report and creates spreadsheet of updated hop alpha '''
@@ -176,7 +176,7 @@ def update_hop_tracking_excel(InputDirectoryPath, OutputDirectoryPath):
 				if (ekosTitle == SPTitle) and (ekosLot == SPLot):
 					break
 				# if there's no match for ekos entry we need to add it to new SharePoint dataframe
-				elif sploop == total_rows - 1 :
+				elif sploop == total_rows - 1:
 
 					adddict = {'Title': ekosTitle, 'Lot': ekosLot, 'Date': newDate}
 					finalsharepointdf = finalsharepointdf.append(adddict, ignore_index=True)
@@ -202,7 +202,7 @@ def update_hop_tracking_excel(InputDirectoryPath, OutputDirectoryPath):
 				ekosTitle = columnSeriesObjEkosTitle.values[sploop]
 				ekosLot = columnSeriesObjEkosLot.values[sploop]
 				# if we find a match, keep the entry and add it to new dataframe
-				if (ekosTitle == SPTitle) and (ekosLot == SPLot) :
+				if (ekosTitle == SPTitle) and (ekosLot == SPLot):
 					# print('got one',ekosTitle,ekosLot, SPTitle,SPLot, loop, sploop,total_rows-1)
 					adddict = {'Title': SPTitle, 'Lot': SPLot, 'Date': SPDate, 'AA': SPAA, 'Foil': SPFoil}
 					finalsharepointdf = finalsharepointdf.append(adddict, ignore_index=True)
@@ -238,8 +238,8 @@ def update_hop_tracking_excel(InputDirectoryPath, OutputDirectoryPath):
 		print("Entry in Ekos file is not valid")
 		print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 		# print("Exception", e)
-		return 0
-		
+		return 0		
+
 
 ''' this method processes Ekos report and creates spreadsheet to order ingredients '''
 def create_ingredients_order_csv(InputDirectoryPath, OutputDirectoryPath):
@@ -284,8 +284,8 @@ def create_ingredients_order_csv(InputDirectoryPath, OutputDirectoryPath):
 			required = columnSeriesObjRequired.values[loop]
 			inventory = columnSeriesObjInventory.values[loop]
 			# if value is not a float the row don't try to subtract
-			if isinstance(required, float ):
-				if (inventory - required) < 0 :
+			if isinstance(required, float):
+				if (inventory - required) < 0:
 					columnSeriesObjOrder.values[loop] = inventory - required
 			loop = loop + 1
 		print("All entries before deleting items not needing to be ordered")
@@ -375,7 +375,7 @@ def update_hop_tracking_csv(InputDirectoryPath, OutputDirectoryPath):
 				if (ekosTitle == SPTitle) and (ekosLot == SPLot):
 					break
 				# if there's no match for ekos entry we need to add it to new SharePoint dataframe
-				elif sploop == total_rows - 1 :
+				elif sploop == total_rows - 1:
 
 					adddict = {'Title': ekosTitle, 'Lot': ekosLot, 'Date': newDate}
 					finalsharepointdf = finalsharepointdf.append(adddict, ignore_index=True)
@@ -401,7 +401,7 @@ def update_hop_tracking_csv(InputDirectoryPath, OutputDirectoryPath):
 				ekosTitle = columnSeriesObjEkosTitle.values[sploop]
 				ekosLot = columnSeriesObjEkosLot.values[sploop]
 				# if we find a match, keep the entry and add it to new dataframe
-				if (ekosTitle == SPTitle) and (ekosLot == SPLot) :
+				if (ekosTitle == SPTitle) and (ekosLot == SPLot):
 					# print('got one',ekosTitle,ekosLot, SPTitle,SPLot, loop, sploop,total_rows-1)
 					adddict = {'Title': SPTitle, 'Lot': SPLot, 'Date': SPDate, 'AA': SPAA, 'Foil': SPFoil}
 					finalsharepointdf = finalsharepointdf.append(adddict, ignore_index=True)
@@ -439,6 +439,7 @@ def update_hop_tracking_csv(InputDirectoryPath, OutputDirectoryPath):
 		# print("Exception", e)
 		return 0
 
+
 def print_menu():
 	""" print initial menu for user"""
 	print(30 * "-" + "MENU" + 30 * "-")
@@ -471,7 +472,7 @@ if __name__ == "__main__":
 			print("Selection not in range")
 			continue
 		if choice == 1:
-			create_ingredients_order_excel(InputDirectoryPath, OutputDirectoryPath)
+			create_ingredients_order(InputDirectoryPath, OutputDirectoryPath)
 		elif choice == 2:
 			continue
 		elif choice == 3:
