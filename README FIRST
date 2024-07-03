@@ -12,4 +12,5 @@ conda activate baxterGUI
 
 #execute this command
 pip install shareplum
+conda install pyinstaller
 
