@@ -26,13 +26,13 @@ from tkinter import simpledialog
 from tkinter import ttk, messagebox
 import threading
 import base64
-from pyexcel2020 import *
+from processlogs import *
 from sharepoint import download_new_files
 from sharepoint import upload_new_file
 from ekoshandling import *
 
 
-VERSION = "Baxter Excel Automation V7.0.0"
+VERSION = "Baxter Excel Automation V8.1.1"
 
 InputTankLogDir = '/Tank'
 InputFilterLogDir = '/Filter'

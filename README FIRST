@@ -1,0 +1,15 @@
+Baxter GUI environment setup procedure
+
+#from conda base env
+
+#this will create the correct environemnt to build the BaxterGUI code
+#open an Anaconda prompt window
+#cd to the BaxterGUI directory
+#execute these commands
+
+conda env create --file pythonenv.txt -n baxterGUI
+conda activate baxterGUI
+
+#execute this command
+pip install shareplum
+
