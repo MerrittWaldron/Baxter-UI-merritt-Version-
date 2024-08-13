@@ -434,7 +434,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					dfn.fillna(0, inplace=True)
 					getdfnshape = dfn.shape[1]
 					# when done processing, make sure there's exactly 27 columns
-					if getdfnshape != 27:
+					if getdfnshape != 29:
 						print('                                 +++++++++++++++++++++++++++++++++Table not formated properly', dfn.shape, sname)
 						return 0
 					batch_cnt = batch_cnt + 1
