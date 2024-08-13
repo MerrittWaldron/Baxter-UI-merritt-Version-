@@ -407,7 +407,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					# also make sure that the naming convention is the same for all files to be concatenated				
 
 					#new code to fix column name changes
-					dfn.columns.values[5] = 'Blank 1'
+					dfn.columns.values[5] = 'Estimated Strike Temp'
 					dfn.columns.values[6] = 'Strike water vol (gal)'
 					dfn.columns.values[7] = 'Target strike vol (gal)'
 					dfn.columns.values[17] = 'Sparge water vol (gal)'
@@ -430,7 +430,7 @@ def merge_excel_brew_files(InputBrewLogPath, OutputDirectoryDataPathFN):
 					dfdash = pd.DataFrame(dashlst, columns=['Brand', 'Batch', 'Date'])
 					# copy only the columns that have valid data in
 					#  make sure we only get the rows that we want and have valid data
-					dfn = dfn.iloc[:, [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 31, 32, 33, 34, 35, 39, 40]].copy()
+					dfn = dfn.iloc[:, [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 31, 32, 33, 34, 35, 36, 38, 39, 40]].copy()
 					dfn.fillna(0, inplace=True)
 					getdfnshape = dfn.shape[1]
 					# when done processing, make sure there's exactly 27 columns
