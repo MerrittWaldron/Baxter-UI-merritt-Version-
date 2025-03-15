@@ -27,8 +27,8 @@ from tkinter import ttk, messagebox
 import threading
 import base64
 from processlogs import *
-from sharepoint import download_new_files
-from sharepoint import upload_new_file
+from onedrive import download_new_files
+from onedrive import upload_new_file
 from ekoshandling import *
 
 
@@ -160,7 +160,7 @@ class MyGUI:
                 time.sleep(.5)
             self.disable_buttons()
             self.progress1.start(100)
-            retok = download_new_files("Brew", self.shareUsername, self.sharePassword)
+            retok = download_new_files("Brew")
             if not retok:
                 self.progress1.stop()
                 self.close_button1['state'] = 'normal'

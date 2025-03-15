@@ -1,0 +1,4 @@
+/Brewery and Cellar/Brewing Logs/Old Brewing Logs/
+/Brewery and Cellar/Tank Logs/Old Tank Logs/
+/Brewery and Cellar/Filter Logs/Old Filter Logs/
+/Brewery and Cellar/Brewing Logs/Hops Tracking/
