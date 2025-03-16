@@ -40,7 +40,7 @@ class BAXTEROneDriveInterface:
         """This fucntion will download a file from the ShaOneDriverepoint to specified sink path.
 
         Parameters:
-            source_path = r'C:/Users/paul/OneDrive - Baxter Brewing/Documents - Brewery Operations/...'
+            source_path = r'C:/Users/username/OneDrive - Baxter Brewing/Documents - Brewery Operations/...'
             dest_path = r'/full_dest_path/'
             list_filenames = 'panda frame of filenames'
 
@@ -91,11 +91,7 @@ class BAXTEROneDriveInterface:
             source_path = r'Shared Documents/Shared/<Location>'
             onedrive_path = 'https://xxx.sharepoint.com/sites/<site_name>'
         """
-        #site = Site(onedrive_path, version=Version.v2016, authcookie=self.authcookie)
-        #folder_source = site.Folder(source_path)
-        #Get object for files in a directory
-        folder_path = 'C:/Users/paul/OneDrive - Baxter Brewing/Documents - Brewery Operations/Brewery and Cellar/Brewing Logs/Old Brewing Logs/'
-        filenames = os.listdir(folder_path)
+        filenames = os.listdir(source_path)
         items_df = pd.DataFrame()
         for i in filenames:
             items_df = pd.concat([items_df, pd.DataFrame.from_dict([i])])
@@ -180,11 +176,15 @@ def download_new_files(fileType):
     new_filenames = []
     onedrive_paths = open_onedrive_filenames()
 
-    # base URL for Baxter OneDrive
-    onedrive_base_url = 'C:/Users/paul/OneDrive - Baxter Brewing/Documents - Brewery Operations/'
-    print('Looking in OneDrive for new files')
+    # build path to OneDrive using current user
+    your_path= os.getcwd()
+    path_list = your_path.split(os.sep)
+    my_user_path = path_list[0]+'/'+path_list[1]+'/'+path_list[2]
+    onedrive_base_url = my_user_path +'/OneDrive - Baxter Brewing/Documents - Brewery Operations/'
+    print('Looking in OneDrive for new files in ',onedrive_base_url)
     # create class object
-    
+
+
     try:
         #original code next line        
         ODrive = BAXTEROneDriveInterface(onedrive_base_url)
@@ -212,8 +212,6 @@ def download_new_files(fileType):
     else:
         print("Filetype was not correct\n")
         return 0
-    # main Baxter ODrive into the brewery infomation
-    onedrive_path = 'C:/Users/paul/OneDrive - Baxter Brewing/Documents - Brewery Operations/'
     # now go get a list of files that are on sharepoint site
     print('Getting filenames from ', source_path)
     my_data = ODrive.list_item_onedrive(source_path)
@@ -242,7 +240,6 @@ def download_new_files(fileType):
     #        dest_path = r'Shared Documents/Shared/<Location>'
     #        filename = 'filename.ext'
     #        onedrive_path = 'https://xxx.sharepoint.com/sites/<site_name>'
-    #:\Users\paul\OneDrive - Baxter Brewing\Documents - Brewery Operations\Brewery and Cellar\Brewing Logs
     ODrive.download_file_onedrive(source_path, dest_path, new_filenames)
 
     return 1
