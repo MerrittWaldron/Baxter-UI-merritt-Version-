@@ -22,9 +22,6 @@
 import os
 import pandas as pd
 from collections import Counter
-#from shareplum import Site
-#from shareplum import Office365
-#from shareplum.site import Version
 import warnings
 import shutil
 
@@ -49,25 +46,13 @@ class BAXTEROneDriveInterface:
 
         """
         for filename in list_filenames:
-            #print('Downloading file ', filename)
-            #full_source_path = os.path.join(source_path, filename)
-            #full_dest_path = os.path.join(dest_path, filename)
-            #print(full_source_path)
-            #print(full_dest_path)
-            #onedrive_filenames = os.listdir(source_path)
-            # Copy file from src to dest           
-            my_string = (str(filename)[2:-2])
-            #print ('STR',my_string)
-            full_source_path = os.path.join(source_path, my_string)
-            full_dest_path = os.path.join(dest_path, my_string)
-            print(full_source_path)
-            #print('FULLD',full_dest_path)
+            print('Downloading file ', filename)
+            # remove brackets and dashes in the list and make list elements strings           
+            #my_string = (str(filename)[2:-2])
+            full_source_path = os.path.join(source_path, filename)
+            full_dest_path = os.path.join(dest_path, filename)
 
-            #print(type(filename))
-            #print('from ',"'"+source_path+my_string,'To ', "'"+dest_path+my_string)
-            #print('from ',full_source_path,'To ', full_dest_path)
-
-            # Copy file
+            # Copy file files from OneDrive to local folder
             shutil.copy(full_source_path, full_dest_path)
 
     # """This fucntion will upload a file from the source path to Sharepoint."""
@@ -108,50 +93,19 @@ class BAXTEROneDriveInterface:
         """
         #site = Site(onedrive_path, version=Version.v2016, authcookie=self.authcookie)
         #folder_source = site.Folder(source_path)
-        # Get object for files in a directory
+        #Get object for files in a directory
         folder_path = 'C:/Users/paul/OneDrive - Baxter Brewing/Documents - Brewery Operations/Brewery and Cellar/Brewing Logs/Old Brewing Logs/'
         filenames = os.listdir(folder_path)
-        #files_item = folder_source.files
         items_df = pd.DataFrame()
         for i in filenames:
-            #items_df = items_df.append(pd.DataFrame.from_dict([i]))
             items_df = pd.concat([items_df, pd.DataFrame.from_dict([i])])
 
         if len(items_df) > 0:
-        #     # Subset the columns
-        #     subset_cols = [
-        #         "Length",
-        #         "LinkingUrl",
-        #         "MajorVersion",
-        #         "MinorVersion",
-        #         "Name",
-        #         "TimeCreated",
-        #         "TimeLastModified",
-        #     ]
-        #     items_df = items_df[subset_cols]
-
-        #     # Parse url to remove everything after ? mark
-        #     items_df["LinkingUrl"] = [i.split("?")[0] for i in items_df["LinkingUrl"]]
-        #     # convert bytes to KB
-        #     items_df["Length"] = [round(int(i) / 1000, 2) for i in items_df["Length"]]
-        #     # sort based on file names
-        #     items_df.sort_values("Name", inplace=True)
-
-        #     # rename to more friendly names
-        #     items_df.columns = [
-        #         "FileSize",
-        #         "FullFileUrl",
-        #         "FileVersion",
-        #         "MinorVersion",
-        #         "FileName",
-        #         "TimeCreated",
-        #         "TimeLastModified",
-        #     ]
-            #print (items_df)
+            #return a dataframe of file on the OneDrive
             return items_df
         else:
-            # print(f"No files in {source_path} directory")
-            return pd.DataFrame()
+            print(f"No files in {source_path} directory")
+            return 0
 
 
 ''' this method checks to see if the filename tracker file exist,
@@ -162,41 +116,49 @@ class BAXTEROneDriveInterface:
 def find_duplicate_filenames(all_filenames_in_dir, txtfilename):
     # open the file of filanmes already downloaded
     # create a list that can be compared against the newly discovered files
+    modfilelist1=[]
+    modfilelist2=[]
+    modall_filenames_in_dir=[]
     list2=[]
-    if os.path.exists(txtfilename) and os.path.getsize(txtfilename) != 0 :
+    #if os.path.exists(txtfilename) and os.path.getsize(txtfilename) != 0 :
+    if os.path.exists(txtfilename):
+
         with open(txtfilename) as f:
             file_content = f.readlines()
             converted_list = []
             for element in file_content:
                 converted_list.append(element.strip())
             file_content = converted_list
+        #files listed in theBrewFN.txt file
         list1 = file_content
-        # need to remove path name and leave only filename
-        #for sname in list1:
+        for sname in list1:
             # create a new list without paths
-        #    newlist.append(sname.rpartition('/')[2])
-        #list2 = all_filenames_in_dir.values.tolist()
+            modfilelist1.append(sname.rpartition('/')[2])
+        #files listed on the OneDrive
         list2 = all_filenames_in_dir
-        #print('list1T',type(list1))
-        #print('list2T',type(list2))
+        for filename in list2:
+            # create a new list without paths
+            my_string = (str(filename)[2:-2])
+            modfilelist2.append(my_string)
 
-        #print('list1',list1)
-        #print('list2',list2)
-        C1 = Counter(list1)
-        C2 = Counter(list2)
-        #print('C1', C1)
-        #print('C2', C2)
-
+        #print(modfilelist1)
+        #print(modfilelist2)
+        C1 = Counter(modfilelist1)
+        C2 = Counter(modfilelist2)
         # now we have a list of files that have not been downloaded yet
         # return list to caller for processing
         new_filenames = list((C2 - C1).elements())
-        #print('DOWNLOAD THESE', new_filenames)
-
+        print('Files to be added',new_filenames)
         return  new_filenames
     else:
         f1 = open(txtfilename, 'w')
         f1.close()
-        return all_filenames_in_dir
+        print('File does not exist')
+        for filename in all_filenames_in_dir:
+            # create a new list without paths
+            my_string = (str(filename)[2:-2])
+            modall_filenames_in_dir.append(my_string)
+        return modall_filenames_in_dir
 
 
 ''' this method open local file to get sharepoint paths '''
@@ -250,7 +212,7 @@ def download_new_files(fileType):
     else:
         print("Filetype was not correct\n")
         return 0
-    # main Baxter sharepoint ODrive into the brewery infomation
+    # main Baxter ODrive into the brewery infomation
     onedrive_path = 'C:/Users/paul/OneDrive - Baxter Brewing/Documents - Brewery Operations/'
     # now go get a list of files that are on sharepoint site
     print('Getting filenames from ', source_path)
