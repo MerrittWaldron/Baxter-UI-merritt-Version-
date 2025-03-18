@@ -32,7 +32,7 @@ from onedrive import upload_new_file
 from ekoshandling import *
 
 
-VERSION = "Baxter Excel Automation V8.2.1"
+VERSION = "Baxter Excel Automation V8.3.1"
 
 InputTankLogDir = '/Tank'
 InputFilterLogDir = '/Filter'
